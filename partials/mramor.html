@@ -1,0 +1,16 @@
+<h1 class="text-center">{{title}}</h1>
+<div class="row margin-0 border text-center">
+    <strong class="col-md-6 border-right">Услуга</strong>
+    <strong class="col-md-6">Цена</strong>
+  </div>
+<div ng-repeat="item in oneItem " class="border text-center">
+  <div class="row margin-0">
+    <div class="col-md-6 border-right" style="font-weight:{{item.strong}}">{{item.key}}</div>
+    <div class="col-md-6">{{item.value}}</div>
+  </div>
+</div>
+
+<p class="text-center margin-20">
+    При квадратура до 15м2 услугата шлайфане и запечатване с полираща емулсия (два слоя) е на стойност 250 лв, което е и размерът на минималната поръчка на фирмата!
+Цените са без ДДС. Представянето на крайна оферта изисква извършване на оглед на съответния обект.
+</p>

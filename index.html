@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+  <head>
+  	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page Title</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/slick-carousel/slick/slick.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.10/angular.min.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.10/angular-resource.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.10/angular-route.min.js"></script>
+    <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="bower_components/slick-carousel/slick/slick.js"></script>
+    <script type="text/javascript" src="bower_components/angular-slick/dist/slick.js"></script>
+  </head>
+
+  <body ng-controller="AppController" >
+
+  	<header>
+    	<div style="height:15px"></div>
+      <!-- nav -->
+      <div class="navigation">
+        <div class="container-fluid">
+          <div ng-include="'partials/nav.html'"></div>
+        </div>
+      </div>
+      <div ng-show="homePage">
+      	<div class="container">
+          <div ng-include="'partials/home_header.html'"></div>
+        </div>
+      </div>
+      <!-- <div ng-hide="homePage"> -->
+      	<div class="gallery" ng-cloak>
+        	<div ng-include="'partials/gallery.html'"></div>
+      	</div>
+  		<!-- </div> -->
+    </header>
+
+		<div class="containers">
+      <!-- views are loaded in here -->
+      <div id="content" ng-view></div>
+    </div>
+
+    <!-- footer -->
+    <div ng-include="'partials/footer.html'"></div>
+
+    <!-- app scripts -->
+  <script type="text/javascript" src="js/main.js"></script>
+  <script type="text/javascript" src="js/controllers/industrialniPodoveController.js"></script>
+  <script type="text/javascript" src="js/controllers/dekorativniPodoveController.js"></script>
+  <script type="text/javascript" src="js/controllers/mramorController.js"></script>
+
+  </body>
+
+</html>

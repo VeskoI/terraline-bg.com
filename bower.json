@@ -1,0 +1,14 @@
+{
+  "name": "terraline-bower",
+  "version": "2.0.0",
+  "moduleType": [
+    "amd",
+    "es6",
+    "globals",
+    "node",
+    "yui"
+  ],
+  "license": "MIT",
+  "homepage": "index.html",
+  "private": true
+}
