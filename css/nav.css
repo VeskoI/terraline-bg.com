@@ -34,7 +34,7 @@ header {
 .navigation-container > .nav > li > a {
     color: #fff;
     border-radius: 0px;
-    padding: 12px 10px 10px;
+    padding: 13px 15px 10px;
 }
 
 .navigation-container > ul > li > a:hover,
@@ -43,13 +43,13 @@ header {
     text-decoration: none;
     background-color: transparent;
     border-top: 2px solid #df4624;
-    padding: 9px;
+    /*padding: 9px;*/
 }
 
 .promo_link {
     display: inline-block;
-    padding: 12px 15px 9px;
-    min-height: 45px;
+    padding: 13px 15px 9px;
+    min-height: 46px;
     background-color: #df4624;
     text-transform: uppercase;
     color: #fff;
