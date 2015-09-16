@@ -7,11 +7,6 @@ header {
     background-color: #8c8c8c;
 }
 
-.slogan {
-    font-size: 0.85em;
-    color: #fff;
-}
-
 .navigation {
     background-color: #565656;
 }
@@ -21,6 +16,11 @@ header {
     min-height: 40px;
     padding: 5px 15px 2px;
     margin-left: -15px;
+}
+
+.logo-container .slogan {
+    font-size: 0.85em;
+    color: #fff;
 }
 
 .logo-container > a, .logo-container > a:hover{
@@ -33,9 +33,8 @@ header {
 
 .navigation-container > .nav > li > a {
     color: #fff;
-    padding-top: 25px;
     border-radius: 0px;
-    padding: 10px 10px;
+    padding: 12px 10px 10px;
 }
 
 .navigation-container > ul > li > a:hover,
@@ -49,7 +48,7 @@ header {
 
 .promo_link {
     display: inline-block;
-    padding: 10px 15px 9px;
+    padding: 12px 15px 9px;
     min-height: 45px;
     background-color: #df4624;
     text-transform: uppercase;
