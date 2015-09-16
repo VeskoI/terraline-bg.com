@@ -1,71 +1,74 @@
 <h1 class="text-center">{{title}}</h1>
 <div class="row border margin-0">
-  <strong class="col-md-3 text-center">Приложение</strong>
-  <div class="col-md-9">
-    <div class="row">
-      <strong class="col-md-6 text-center">Технология</strong>
-      <strong class="col-md-2 text-center">Дебелина /мм/</strong>
-      <strong class="col-md-2 text-center">Механична устойчивост</strong>
-      <strong class="col-md-2 text-center">Комплексна цена материали и труд</strong>
+    <strong class="col-md-3 text-center">Приложение</strong>
+
+    <div class="col-md-9">
+        <div class="row">
+            <strong class="col-md-6 text-center">Технология</strong>
+            <strong class="col-md-2 text-center">Дебелина /мм/</strong>
+            <strong class="col-md-2 text-center">Механична устойчивост</strong>
+            <strong class="col-md-2 text-center">Комплексна цена материали и труд</strong>
+        </div>
     </div>
-  </div>
 </div>
 <div ng-repeat="(title,item) in items" class="border text-center">
-  <div class="row">
-    <div class="col-md-3">{{title}}</div>
-    <div class="col-md-9">
-      <div ng-repeat="params in item" class="table-bordered">
-        <div class="row">
-          <div class="col-md-6">{{params.technology}}</div>
-          <div class="col-md-2">{{params.thickness}}</div>
-          <div class="col-md-2">{{params.resistance}}</div>
-          <div class="col-md-2">{{params.price}}</div>
+    <div class="row">
+        <div class="col-md-3">{{title}}</div>
+        <div class="col-md-9">
+            <div ng-repeat="params in item" class="table-bordered">
+                <div class="row">
+                    <div class="col-md-6">{{params.technology}}</div>
+                    <div class="col-md-2">{{params.thickness}}</div>
+                    <div class="col-md-2">{{params.resistance}}</div>
+                    <div class="col-md-2">{{params.price}}</div>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
 </div>
-  
+
 <div ng-repeat="(title,item) in multipleItems" class="border text-center">
-	<div class="row">
-  	<div class="col-md-3">{{title}}</div>
-  	<div class="col-md-9">
-   		<div ng-repeat="(titleItem,params) in item" class="table-bordered">
-      	<div class="row">
-        	<div class="col-md-6">{{titleItem}}</div>
-        	<div class="col-md-6">
-          	<div ng-repeat="param in params" class="table-bordered">
-            	<div class="row">
-              	<div class="col-md-4">{{param.thickness}}</div>
-              	<div class="col-md-4">{{param.resistance}}</div>
-              	<div class="col-md-4">{{param.price}}</div>
-            	</div>
-          	</div>
-        	</div>
-      	</div>
-    	</div>
-  	</div>
-	</div>
+    <div class="row">
+        <div class="col-md-3">{{title}}</div>
+        <div class="col-md-9">
+            <div ng-repeat="(titleItem,params) in item" class="table-bordered">
+                <div class="row">
+                    <div class="col-md-6">{{titleItem}}</div>
+                    <div class="col-md-6">
+                        <div ng-repeat="param in params" class="table-bordered">
+                            <div class="row">
+                                <div class="col-md-4">{{param.thickness}}</div>
+                                <div class="col-md-4">{{param.resistance}}</div>
+                                <div class="col-md-4">{{param.price}}</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 <div ng-repeat="item in oneItem " class="border text-center">
-  <div class="row margin-0">
-    <div class="col-md-3">{{item.key}}</div>
-    <div class="col-md-9  table-bordered">{{item.value}}</div>
-  </div>
+    <div class="row margin-0">
+        <div class="col-md-3">{{item.key}}</div>
+        <div class="col-md-9  table-bordered">{{item.value}}</div>
+    </div>
 </div>
 
 <div ng-show="podove">
-  <h2 class="text-center">СТЕПЕНИ НА МЕХАНИЧНА УСТОЙЧИВОСТ</h2>
-  <div ng-repeat="item in thickness " class="border text-center">
-    <div class="row">
-      <div class="col-md-3 border-right">{{item.key}}</div>
-      <div class="col-md-9">{{item.value}}</div>
+    <h2 class="text-center">СТЕПЕНИ НА МЕХАНИЧНА УСТОЙЧИВОСТ</h2>
+
+    <div ng-repeat="item in thickness " class="border text-center">
+        <div class="row">
+            <div class="col-md-3 border-right">{{item.key}}</div>
+            <div class="col-md-9">{{item.value}}</div>
+        </div>
     </div>
-  </div>
-  
-  <p class="text-center margin-20">
-    Цените са без ДДС и варират в посочените интервали в зависимост от състоянието на основата, използваните материали и дебелината на полаганата настилка. 
-    Представянето на крайна оферта изисква извършване на оглед на съответния обект.
-  </p>
+
+    <p class="text-center margin-20">
+        Цените са без ДДС и варират в посочените интервали в зависимост от състоянието на основата, използваните
+        материали и дебелината на полаганата настилка.
+        Представянето на крайна оферта изисква извършване на оглед на съответния обект.
+    </p>
 </div>
