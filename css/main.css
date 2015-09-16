@@ -41,8 +41,7 @@
 	text-align				: center;
 }
 .slick-active.slick-center h6 {
-	border						:	1px solid #df4624;
-	box-shadow				: 0px 0px 25px #DF5624;
+	border						:	3px solid #df4624;
 }
 .slick-active.slick-center h6 img {
 	height						:	280px;
