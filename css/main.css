@@ -53,8 +53,9 @@
     border: 3px solid #df4624;
 }
 
-.slick-active.slick-center h6 img {
+.slick-slide h6 img {
     height: 280px;
+    width: 100%;
 }
 
 #content {
