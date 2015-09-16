@@ -80,5 +80,9 @@
 			$scope.$on('$routeChangeSuccess', function() {
 				$scope.homePage = $rootScope.homePage = $location.path() == "/" || $location.path() == "" ? true : false;	
 			});
-    }]);				
+    }]).filter('currentDate', ['$filter', function($filter) {
+            return function() {
+                return $filter('date')(new Date(), 'yyyy');
+            }
+        }]);
 })();
