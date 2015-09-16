@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<<<<<<< Updated upstream
       <module fileurl="file://$PROJECT_DIR$/.idea/terraline-bg.iml" filepath="$PROJECT_DIR$/.idea/terraline-bg.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/.idea/terraline-bg.com.iml" filepath="$PROJECT_DIR$/.idea/terraline-bg.com.iml" />
+>>>>>>> Stashed changes
     </modules>
   </component>
 </project>

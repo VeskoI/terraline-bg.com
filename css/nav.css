@@ -7,6 +7,11 @@ header {
     background-color: #8c8c8c;
 }
 
+.slogan {
+    font-size: 0.85em;
+    color: #fff;
+}
+
 .navigation {
     background-color: #565656;
 }
@@ -14,7 +19,8 @@ header {
 .logo-container {
     background-color: #df4624;
     min-height: 40px;
-    padding: 5px 15px 15px;
+    padding: 5px 15px 2px;
+    margin-left: -15px;
 }
 
 .navigation-container > ul {
@@ -40,7 +46,7 @@ header {
 .promo_link {
     display: inline-block;
     padding: 10px 15px 9px;
-    min-height: 41px;
+    min-height: 45px;
     background-color: #df4624;
     text-transform: uppercase;
     color: #fff;
