@@ -23,6 +23,10 @@ header {
     margin-left: -15px;
 }
 
+.logo-container > a, .logo-container > a:hover{
+    text-decoration: none;
+}
+
 .navigation-container > ul {
     margin-right: -21px;
 }
