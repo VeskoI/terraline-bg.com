@@ -1,46 +1,54 @@
 /* navigation */
 header {
-	min-height				:	250px;
-	background-image	:	url(/terraline-bg/images/top-bg.png);
-	background-repeat	:	no-repeat;
-	background-size		:	100% 100%;
-	background-color	:	#8c8c8c;
+    min-height: 250px;
+    background-image: url(/terraline-bg/images/top-bg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-color: #8c8c8c;
 }
+
 .navigation {
-	background-color	: #565656;
+    background-color: #565656;
 }
+
 .logo-container {
-	background-color	: #df4624;
-	min-height				:	40px;
-	padding						:	5px 15px 15px;
+    background-color: #df4624;
+    min-height: 40px;
+    padding: 5px 15px 15px;
 }
+
 .navigation-container > ul {
-	margin-right	: -21px;
+    margin-right: -21px;
 }
-.navigation-container > .nav > li> a {
-	color					:	#fff;
-	padding-top		: 25px;
-	border-radius	:	0px;
-	padding				:	10px 10px;
+
+.navigation-container > .nav > li > a {
+    color: #fff;
+    padding-top: 25px;
+    border-radius: 0px;
+    padding: 10px 10px;
 }
-.navigation-container > ul > li> a:hover,
-.navigation-container > ul > li> a:focus {
-	color							: #df4624;
-	text-decoration		: none;
-	background-color	: transparent;
-	border-top				: 2px solid #df4624;
-	padding						: 9px;
+
+.navigation-container > ul > li > a:hover,
+.navigation-container > ul > li > a:focus {
+    color: #df4624;
+    text-decoration: none;
+    background-color: transparent;
+    border-top: 2px solid #df4624;
+    padding: 9px;
 }
+
 .promo_link {
-	display						: inline-block;
-	padding						: 10px 15px 9px;
-	min-height				: 41px;
-	background-color	: #df4624;
-	color							: #fff;
+    display: inline-block;
+    padding: 10px 15px 9px;
+    min-height: 41px;
+    background-color: #df4624;
+    text-transform: uppercase;
+    color: #fff;
 }
+
 .promo_link:hover,
 .promo_link:active,
 .promo_link:focus,
 .promo_link:visited {
-	color	: #fff;
+    color: #fff;
 }
