@@ -20,6 +20,7 @@ header {
 
 .logo-container .slogan {
     font-size: 0.85em;
+    text-transform: lowercase;
     color: #fff;
 }
 
