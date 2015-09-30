@@ -13,26 +13,29 @@
                 <a href="mailto:info@terraline-bg.com" target="_top">info@terraline-bg.com</a>
             </div>
         </div>
-        <div class="col-md-9">
-            <form role="form" class="margin-20">
+        <div ng-controller="ctController" class="col-md-9">
+
+            <p ng-class="result" style="padding: 15px; margin: 0; font-weight: bold; font-size: medium; border: 1px solid grey">{{ resultMessage }}</p>
+
+            <form ng-submit="submit(contactForm)" role="form" class="margin-20" action="" method="post" name="contactForm">
                 <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" class="form-control" id="name" placeholder="Enter name">
+                    <label for="name">Име</label>
+                    <input type="text" ng-model="formData.inputName" class="form-control" id="name" placeholder="Вашето име" required>
                 </div>
                 <div class="form-group">
                     <label for="email1">Email</label>
-                    <input type="email" class="form-control" id="email1" placeholder="Enter email">
+                    <input type="email" ng-model="formData.inputEmail" class="form-control" id="email1" placeholder="Вашият email" required>
                 </div>
                 <div class="form-group">
-                    <label for="subject">Subject</label>
-                    <input type="text" class="form-control" id="subject" placeholder="Enter name">
+                    <label for="subject">Относно</label>
+                    <input type="text" ng-model="formData.inputSubject" class="form-control" id="subject" placeholder="Запитване за оферта, въпрос и др." required>
                 </div>
                 <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea class="form-control" id="message" rows="3"></textarea>
+                    <label for="message">Съобщение</label>
+                    <textarea ng-model="formData.inputMessage" class="form-control" id="message" rows="3" required></textarea>
                 </div>
 
-                <button type="submit" class="btn btn-default">Submit</button>
+                <button type="submit" class="btn btn-default" ng-disabled="submitButtonDisabled">Изпрати</button>
             </form>
         </div>
     </div>

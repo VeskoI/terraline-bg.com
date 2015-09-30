@@ -8,7 +8,7 @@
     angular.module('app').constant('_START_REQUEST_', '_START_REQUEST_');
     angular.module('app').constant('_END_REQUEST_', '_END_REQUEST_');
 
-    // create an empty controller for 404
+    // Create an empty controller for 404
     angular.module('app').controller('pageNotFoundController', [function () {
         // nothing here
     }]);
